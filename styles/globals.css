@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wdth,wght@62.5..100,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 14px;
+  line-height: 20px;
+  /* color: #0c2d57; */
+}
+
+@layer components {
+  .shadow-round {
+    @apply rounded-md shadow-md;
+  }
+
+  .card {
+    @apply rounded-md bg-white shadow p-4;
+  }
+
+  .verified {
+    @apply rounded-md size-fit tracking-wide text-sm px-2 bg-green-300 text-green-800
+  }
+
+  .error-text {
+    @apply text-sm text-red-600
+  }
+}
